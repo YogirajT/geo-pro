@@ -18,6 +18,8 @@ Geo-pro is a service to get features inside a bounding box marked by latitude an
     https://github.com/YogirajT/geo-pro.git
     ```
 
+* Set up `.env` file in the project-root by referring to `.sample.env`
+
 * Get docker-compose for your machine
 
     ex. For Ubuntu refer
@@ -25,8 +27,6 @@ Geo-pro is a service to get features inside a bounding box marked by latitude an
     ```
     https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
     ```
-
-* Set up .env file in the monorepo root by referring to .sample.env 
 
 * Run command 
 

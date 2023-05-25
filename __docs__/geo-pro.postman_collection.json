@@ -7,10 +7,40 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+      "name": "get geo features",
 			"request": {
 				"method": "GET",
-				"header": []
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/v1/geo-features?minLong=-0.15461&minLat=51.48007&maxLong=-0.15451&maxLat=51.48057",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "v1",
+            "geo-features"
+          ],
+          "query": [
+            {
+              "key": "minLong",
+              "value": "-0.15461"
+            },
+            {
+              "key": "minLat",
+              "value": "51.48007"
+            },
+            {
+              "key": "maxLong",
+              "value": "-0.15451"
+            },
+            {
+              "key": "maxLat",
+              "value": "51.48057"
+            }
+          ]
+        }
 			},
 			"response": []
 		}
