@@ -34,10 +34,11 @@ Geo-pro is a service to get features inside a bounding box marked by latitude an
     docker compose up
     ```
 
-* After the installation completes the server should be available on (if the port in .sample.env wasn't changed)
-    ```
-    http://localhost:3000
-    ````
+* After the installation completes the server should be available on (provided the ports in .sample.env weren't changed)
+
+    ```
+    http://localhost:3000/v1/geo-features
+    ````
 
 ## Usage
 
