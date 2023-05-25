@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "a17af1b6-3c35-44d4-bc70-d1911ae69f11",
+		"name": "geo-pro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5346086"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

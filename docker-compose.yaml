@@ -1,0 +1,25 @@
+services:
+
+  geo-dev:
+    container_name: geo-pro
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: development
+      args:
+        - BUILD_CONTEXT=backend
+        - DOCKER_BACKEND_APP_PORT=${DOCKER_CONTAINER_PORT}
+    volumes:
+      - .:/usr/src/app
+    environment:
+      NODE_ENV: development
+      PORT: ${DOCKER_BACKEND_APP_PORT}
+      MAPS_API_URL: ${MAPS_API_URL}
+    ports:
+      - '${DOCKER_HOST_PORT}:${DOCKER_CONTAINER_PORT}'
+    entrypoint: ["npm", "run", "start"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://${DOCKER_BACKEND_HOST}:${DOCKER_HOST_PORT}/health"]
+      interval: 20s
+      timeout: 15s
+      retries: 5
